@@ -7,6 +7,8 @@ using Unity.VisualScripting.ReorderableList;
 public class MenuButtonsManager : MonoBehaviour
 {
     public List<GameObject> buttons;
+
+    [Header("Animation")]
     public float duration = .2f;
     public float delay = .05f;
     public Ease ease = Ease.OutBack;
