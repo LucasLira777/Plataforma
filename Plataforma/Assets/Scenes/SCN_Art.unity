@@ -384,8 +384,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388782692}
   m_Enabled: 1
-  m_SortingLayerID: 2097750727
-  m_SortingLayer: 0
+  m_SortingLayerID: -327246627
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &394303427
@@ -525,8 +525,6 @@ MonoBehaviour:
       rightTangent: {x: 1.4106903, y: -0.009070396, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -535,8 +533,6 @@ MonoBehaviour:
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 2
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -551,11 +547,12 @@ MonoBehaviour:
   m_ColliderDetail: 16
   m_ColliderOffset: 0
   m_UpdateCollider: 1
-  m_OptimizeCollider: 1
-  m_OptimizeGeometry: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
   m_UTess2D: 0
+  m_Creator: {fileID: 0}
+  m_Modifiers: []
+  m_ColliderSegment: []
 --- !u!1971053207 &411345179
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -612,8 +609,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -62.328278, y: 0.8056743, z: -0.00005}
-    m_Extent: {x: 113.543945, y: 1.9142902, z: 0.00005}
+    m_Center: {x: -62.32901, y: 0.805673, z: 0}
+    m_Extent: {x: 113.54321, y: 1.9142914, z: 0}
   m_SpriteSortPoint: 0
 --- !u!1 &608379696
 GameObject:
@@ -1670,8 +1667,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207329805}
   m_Enabled: 1
-  m_SortingLayerID: 2097750727
-  m_SortingLayer: 0
+  m_SortingLayerID: -327246627
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &1216257641
@@ -1727,8 +1724,6 @@ MonoBehaviour:
       rightTangent: {x: 1.3803482, y: -0.02658844, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -1737,8 +1732,6 @@ MonoBehaviour:
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -1753,11 +1746,12 @@ MonoBehaviour:
   m_ColliderDetail: 16
   m_ColliderOffset: 0
   m_UpdateCollider: 1
-  m_OptimizeCollider: 1
-  m_OptimizeGeometry: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
   m_UTess2D: 0
+  m_Creator: {fileID: 0}
+  m_Modifiers: []
+  m_ColliderSegment: []
 --- !u!1971053207 &1216257644
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -1814,8 +1808,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 11.891609, y: 1.3867385, z: -0.00005}
-    m_Extent: {x: 113.00081, y: 3.6211388, z: 0.00005}
+    m_Center: {x: 11.891609, y: 1.3867385, z: 0}
+    m_Extent: {x: 113.00081, y: 3.6211388, z: 0}
   m_SpriteSortPoint: 0
 --- !u!1 &1233842583
 GameObject:
@@ -3186,8 +3180,6 @@ MonoBehaviour:
       rightTangent: {x: 5.8866577, y: 0.16033077, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -3196,8 +3188,6 @@ MonoBehaviour:
       rightTangent: {x: 0.9219284, y: 0.003689766, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -3212,11 +3202,12 @@ MonoBehaviour:
   m_ColliderDetail: 16
   m_ColliderOffset: 0
   m_UpdateCollider: 1
-  m_OptimizeCollider: 1
-  m_OptimizeGeometry: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
   m_UTess2D: 0
+  m_Creator: {fileID: 0}
+  m_Modifiers: []
+  m_ColliderSegment: []
 --- !u!1971053207 &1812774652
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -3273,8 +3264,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -31.774208, y: -1.2600663, z: -0.00005}
-    m_Extent: {x: 112.91244, y: 2.2659514, z: 0.00005}
+    m_Center: {x: -31.774208, y: -1.260066, z: 0}
+    m_Extent: {x: 112.91244, y: 2.2659514, z: 0}
   m_SpriteSortPoint: 0
 --- !u!1 &1849393367
 GameObject:
@@ -3378,8 +3369,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869982225}
   m_Enabled: 1
-  m_SortingLayerID: 2097750727
-  m_SortingLayer: 0
+  m_SortingLayerID: -327246627
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &1877822786
