@@ -5,10 +5,17 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
-    public Vector2 velocity;
+    public Vector2 friction = new Vector2(.1f, 0);
     public float speed = 15;
+    public float forceJump = 10;
     
    private void Update()
+    {
+        HandleMoviment();
+        HandleJump();
+    }
+
+    private void HandleMoviment()
     {
         if (Input.GetKey(KeyCode.A))
         {
@@ -20,10 +27,21 @@ public class Player : MonoBehaviour
             //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(speed, myRigidbody.velocity.y);
         }
-        else if (Input.GetKey(KeyCode.W))
+
+        if (myRigidbody.velocity.x > 0)
         {
-            //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
-            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, speed);
+            myRigidbody.velocity += friction;
+        }
+        else if (myRigidbody.velocity.x < 0)
+        {
+            myRigidbody.velocity -= friction;
+        }
+    }
+    private void HandleJump()
+    {
+         if (Input.GetKeyDown(KeyCode.W))
+        {
+            myRigidbody.velocity = Vector2.up * forceJump;
         }
     }
 }
