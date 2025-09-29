@@ -6,15 +6,25 @@ using DG.Tweening;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
+
+    
+    [Header("speed setup")]
     public Vector2 friction = new Vector2(.1f, 0);
     public float speed ;
     public float speedRun;
     public float forceJump = 10;
     private float _currentSpeed;
+
+    [Header("animation setup")]
     public float jumpScaleY = 1.5f;
     public float jumpScaleX = 0.7f;
     public float animationDuration = .3f;
     public Ease ease = Ease.OutBack;
+
+    [Header("animation player")]
+    public string boolRun = "Run";
+    public Animator animator;
+
     
    private void Update()
     {
@@ -34,12 +44,22 @@ public class Player : MonoBehaviour
         {
             //myRigidbody.MovePosition(myRigidbody.position - velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(-_currentSpeed, myRigidbody.velocity.y);
+            myRigidbody.transform.localScale = new Vector3(-1, 1, 1);
+            animator.SetBool(boolRun, true);
         }
         else if (Input.GetKey(KeyCode.D))
         {
             //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.deltaTime);
             myRigidbody.velocity = new Vector2(_currentSpeed, myRigidbody.velocity.y);
+            myRigidbody.transform.localScale = new Vector3(1, 1, 1);
+            animator.SetBool(boolRun, true);
         }
+        else
+        {
+            animator.SetBool(boolRun, false);
+        }
+
+
 
         if (myRigidbody.velocity.x > 0)
         {
