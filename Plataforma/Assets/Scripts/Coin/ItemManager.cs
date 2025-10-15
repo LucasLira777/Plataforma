@@ -5,10 +5,19 @@ using Ebac.Core.Singleton;
 
 public class ItemManager : Singleton<ItemManager>
 {
-      public int coins;
+    public static ItemManager Instance;
 
-    private void Start()
+
+
+    public int coins;
+
+    private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+
         Reset();
     }
 
