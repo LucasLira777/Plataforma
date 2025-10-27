@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,6 +6,8 @@ using UnityEngine;
 
 public class HealthBase : MonoBehaviour
 {
+    public Action OnKill;
+
     public float startLife = 10;
     private float _currentLife;
     private bool _isDead = false;
@@ -53,6 +56,8 @@ public class HealthBase : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        OnKill?.Invoke();
     }
 
 }
